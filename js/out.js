@@ -31977,8 +31977,10 @@ var QuotesGenerator = function (_React$Component) {
     value: function getQuote() {
       var _this2 = this;
 
-      _jquery2.default.ajax({ url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=callback', jsonpCallback: 'callback', dataType: 'jsonp' }).done(function (response) {
-        console.log(response);
+      _jquery2.default.ajax({ url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=callback',
+        jsonpCallback: 'callback',
+        dataType: 'jsonp'
+      }).done(function (response) {
         _this2.insertQuote(response);
       }).fail(function (error) {
         console.log('error');

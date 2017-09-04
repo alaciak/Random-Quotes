@@ -19,8 +19,10 @@ class QuotesGenerator extends React.Component {
   }
 
   getQuote() {
-    $.ajax({url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=callback', jsonpCallback: 'callback', dataType: 'jsonp'}).done(response => {
-      console.log(response);
+    $.ajax({url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=callback',
+      jsonpCallback: 'callback',
+      dataType: 'jsonp'
+    }).done(response => {
       this.insertQuote(response);
     }).fail(error => {
       console.log('error');
