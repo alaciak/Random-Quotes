@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+.container .row::before,
+.container .row::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container .row {
+  width: 100%;
+}
+
+.container .row .col-1 {
+  float: left;
+  width: 8.33333%;
+}
+
+.container .row .col-2 {
+  float: left;
+  width: 16.66667%;
+}
+
+.container .row .col-3 {
+  float: left;
+  width: 25%;
+}
+
+.container .row .col-4 {
+  float: left;
+  width: 33.33333%;
+}
+
+.container .row .col-5 {
+  float: left;
+  width: 41.66667%;
+}
+
+.container .row .col-6 {
+  float: left;
+  width: 50%;
+}
+
+.container .row .col-7 {
+  float: left;
+  width: 58.33333%;
+}
+
+.container .row .col-8 {
+  float: left;
+  width: 66.66667%;
+}
+
+.container .row .col-9 {
+  float: left;
+  width: 75%;
+}
+
+.container .row .col-10 {
+  float: left;
+  width: 83.33333%;
+}
+
+.container .row .col-11 {
+  float: left;
+  width: 91.66667%;
+}
+
+.container .row .col-12 {
+  float: left;
+  width: 100%;
+}
+
+body {
+  font-family: "Indie Flower", cursive;
+  background-image: url(../img/background_main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+#app {
+  width: 100%;
+}
+
+nav {
+  background: #021028;
+  height: 2em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+}
+
+nav span {
+  text-transform: uppercase;
+  color: #f4b369;
+}
+
+.quote {
+  font-size: 1.5em;
+  width: 75%;
+  min-height: 30vh;
+  margin: 2em auto;
+  border: 6px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(../img/border.jpg) 30 round;
+  -o-border-image: url(../img/border.jpg) 30 round;
+  border-image: url(../img/border.jpg) 30 round;
+}
+
+.quote-author {
+  padding: 0 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.quote-text {
+  padding: 0 0.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-search a {
+  display: block;
+  text-decoration: none;
+  background: #052051;
+  opacity: 0.8;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 2em;
+  width: 5em;
+  height: 1.25em;
+  text-align: center;
+}
+
+.button-search a:hover {
+  transition: 1s;
+  width: 5.5em;
+  height: 1.5em;
+}
