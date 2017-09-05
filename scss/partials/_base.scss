@@ -36,14 +36,17 @@ nav {
 
 .quote {
   font-size: 1.5em;
-  width: 75%;
-  min-height: 30vh;
+  width: 60%;
+  min-height: 25vh;
   margin: 2em auto;
-  border: 6px solid transparent;
+  border: 4px solid transparent;
   padding: 15px;
   -webkit-border-image: url('../images/border.jpg') 30 round;
   -o-border-image: url('../images/border.jpg') 30 round;
   border-image: url('../images/border.jpg') 30 round;
+  @media (min-width: 768px) {
+    width: 75%;
+  }
 }
 
 .quote-author {
